@@ -1,10 +1,18 @@
-# moozisms_php_class
+# Sending SMS with Moozisms php class 
+
+first you need to get a api_key and secret on [Moozisms](http://moozisms.com/)
 
 To send a file with the moozisms php file 
 
-1 - include the "Moozisms.php" file 
-    require_once "Moozisms.php";
-2 - create a new Moozisms object with the api key and the api secret  
-    $smsmanager = new Moozisms("api_key", "api_secret");
-3 - you can use the sendSMS function of the Moozisms class to send the sms
-    $result = $smsmanager->sendSMS("sender name or phone number", "recipient phone number ", "SMS content");
+- ##### include the "Moozisms.php" file 
+```
+require_once "Moozisms.php";
+```
+- ##### create a new Moozisms object with the api key and the api secret  
+```
+$smsmanager = new Moozisms("api_key", "api_secret");
+```
+- ##### you can use the sendSMS function of the Moozisms class to send the sms
+```
+$result = $smsmanager->sendSMS("sender name or phone number", "recipient phone number ", "SMS content");
+```
