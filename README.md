@@ -14,5 +14,8 @@ $smsmanager = new Moozisms("api_key", "api_secret");
 ```
 - ##### you can use the sendSMS function of the Moozisms class to send the sms
 ```
-$result = $smsmanager->sendSMS("sender name or phone number", "recipient phone number ", "SMS content");
+> Message type can get 2 values 0 for normal text and 1 for unicode or others type as arabic text
+$result = $smsmanager->sendSMS("sender name or phone number", "recipient phone number ", "SMS content","Message Type(optionnal)");
 ```
+
+

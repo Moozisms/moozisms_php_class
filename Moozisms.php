@@ -24,9 +24,10 @@ final class Moozisms
         $this->datatype = "json";
     }
 
-    public function sendSMS($from, $to, $text){
+    public function sendSMS($from, $to, $text, $mt=false){
 
         $data = array(
+            "mt" => $mt ? $mt : 0, // message type 
             "api_key" => $this->api_key,
             "api_secret" => $this->api_secret,
             "to" => $to,    // destination number with country code without OO or+
