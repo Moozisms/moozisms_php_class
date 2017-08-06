@@ -9,4 +9,14 @@ $smsmanager = new Moozisms("xxxxx", "xxxxxxxxxxxxxxxxxxxx");
 // utiliser la méthode sendSMS de la classe en lui donnant en paramètres l'émetteur, le destinataire et le message
 $result = $smsmanager->sendSMS("xxxxxxxxxxxxxxx", "xxxxxxxxxxxxxxxxxxxxxxxxx", "xxxxxxxxxxxxxxxxxxxx");
 
-print_r($result) ;
+ if($result.report=="delivred"){
+ 	
+ 	// do sommething here
+
+ }else{
+
+ // sms not sent
+ 	
+ }
+
+ //print_r($result) ;
