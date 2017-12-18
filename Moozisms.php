@@ -7,7 +7,8 @@
 
 final class Moozisms
 {
-    CONST API_URL = "http://api.moozisms.com/";
+
+    CONST API_URL = "https://api.moozisms.com/";
     private $api_key;
     private $api_secret;
     private $datatype;
@@ -57,4 +58,6 @@ final class Moozisms
         return $result;
 
     }
+
+
 }
