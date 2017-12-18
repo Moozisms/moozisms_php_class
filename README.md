@@ -30,22 +30,22 @@ $result = $smsmanager->sendSMS("sender name or phone number", "recipient phone n
 
 ### Success Response 
 
-```json
+```array
 
-{"report" : "delivred", "ref" :"xxxxxxxxx"}
+["report" : "delivred", "ref" :"xxxxxxxxx"]
 
 ```
 
 
 ### Fail response 
 
-```json
-{"report":"fail","errorCode":1020,"message":"Internal Error"}
-{"report":"fail","errorCode":1012,"message":"Message not sent."}
-{"report":"fail","errorCode":1077,"message":"Network Not supported"}
-{"report":"fail","errorCode":1090,"message":"Internal Error"}
-{"report":"fail","errorCode":1010,"message":"Insufficient SMS"}
-{"report":"fail","errorCode":1001,"message":"Invalid Access key"}
-{"report":"fail","errorCode":1050,"message":"Invalid phoneNumber"}
-{"report":"fail","errorCode":1051,"message":"Invalid sender Id"}
+```array
+["report":"fail","errorCode":1020,"message":"Internal Error"]
+["report":"fail","errorCode":1012,"message":"Message not sent."]
+["report":"fail","errorCode":1077,"message":"Network Not supported"]
+["report":"fail","errorCode":1090,"message":"Internal Error"]
+["report":"fail","errorCode":1010,"message":"Insufficient SMS"]
+["report":"fail","errorCode":1001,"message":"Invalid Access key"]
+["report":"fail","errorCode":1050,"message":"Invalid phoneNumber"]
+["report":"fail","errorCode":1051,"message":"Invalid sender Id"]
 ```
